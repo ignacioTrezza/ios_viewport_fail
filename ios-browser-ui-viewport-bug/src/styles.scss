@@ -14,7 +14,9 @@
 }
 html,
 body {
-  height: 100vh;
+  height: 100%;
+  overflow: hidden;
+
 }
 /* Variable for viewport height adjustment */
 // $vh-adjustment: calc(var(--vh, 1vh) * 100);

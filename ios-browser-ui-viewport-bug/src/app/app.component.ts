@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class AppComponent {
-  title = 'ios-browser-ui-viewport-bug';
+  title = 'ios-viewport-fail';
 }

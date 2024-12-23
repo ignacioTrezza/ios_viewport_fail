@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ios-browser-ui-viewport-bug": {
+    "ios-viewport-fail": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
             "outputPath": "dist/ios-viewport-fail",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "baseHref": "/ios-viewport-fail/",
+            "baseHref": "/",
             "polyfills": [
               "zone.js"
             ],
