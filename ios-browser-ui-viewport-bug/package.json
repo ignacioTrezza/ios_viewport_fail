@@ -1,5 +1,5 @@
 {
-  "name": "ios-browser-ui-viewport-bug",
+  "name": "ios-viewport-fail",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

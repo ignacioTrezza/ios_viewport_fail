@@ -1,0 +1,18 @@
+.home {
+  height: calc(100vh - 6rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
