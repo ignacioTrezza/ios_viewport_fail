@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-page2',
@@ -6,8 +6,28 @@ import { Component } from '@angular/core';
   styleUrls: ['./page2.component.scss'],
   standalone: false,
 })
-export class Page2Component {
+export class Page2Component implements OnInit, OnDestroy {
   itemCount: number = 3;
+  innerHeight: number = 0;
+  outerHeight: number = 0;
+  clientHeight: number = 0;
+
+  ngOnInit() {
+    this.updateHeights();
+    // Update heights when window is resized
+    window.addEventListener('resize', () => this.updateHeights());
+  }
+
+  ngOnDestroy() {
+    // Clean up event listener
+    window.removeEventListener('resize', () => this.updateHeights());
+  }
+
+  updateHeights() {
+    this.innerHeight = window.innerHeight;
+    this.outerHeight = window.outerHeight;
+    this.clientHeight = document.documentElement.clientHeight;
+  }
 
   getItems(): number[] {
     return Array.from({ length: this.itemCount }, (_, i) => i + 1);

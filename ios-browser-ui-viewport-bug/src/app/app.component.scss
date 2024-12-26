@@ -1,14 +1,10 @@
-/* Existing styles */
-.content{
-  height: 100vh;
-}
 // Navigation Styles
 .navigation {
   display: flex;
   gap: 1rem;
   // margin: 1rem 0;
   padding: 0.5rem 0;
-  height: 6rem;
+  height: 4rem;
 
   a {
     text-decoration: none;
@@ -23,5 +19,31 @@
       color: #125699;
     }
   }
+  // Height Info Styles for inner, outer and client height
+.height-info {
+  display: flex;
+  gap: 0.3rem;
+  align-items: flex-end;
+}
+
+.height-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  input {
+    // padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: monospace;
+    width: auto;
+    text-align: right;
+  }
+
+  label {
+    font-size: 0.4rem;
+    color: #666;
+  }
+}
 }
 

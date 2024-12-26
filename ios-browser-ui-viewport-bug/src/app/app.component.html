@@ -1,10 +1,24 @@
 
-<div class="content" role="main">
+<div class="full-viewport-body" role="main">
   <!-- Navigation Links -->
   <nav class="navigation">
     <a routerLink="/" routerLinkActive="active">Home</a>
     <a routerLink="/page1" routerLinkActive="active">Page 1</a>
     <a routerLink="/page2" routerLinkActive="active">Page 2</a>
+    <div class="height-info">
+      <div class="height-box">
+        <label>Inner Height:</label>
+        <label>{{innerHeight}}px</label>
+      </div>
+      <div class="height-box">
+        <label>Outer Height:</label>
+        <label>{{outerHeight}}px</label>
+      </div>
+      <div class="height-box">
+        <label>Client Height:</label>
+        <label>{{clientHeight}}px</label>   
+      </div>
+    </div>
   </nav>
 <router-outlet></router-outlet>
 </div>

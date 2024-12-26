@@ -1,9 +1,11 @@
 .page2 {
-    height: calc(100vh - 6rem);
+    height: calc(100svh - 6rem);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
+    background-color: #6ce91f;
+    
   }
 
 // New styles for the scrollable container
@@ -35,4 +37,39 @@
     font-size: 1rem;
     cursor: pointer;
     width: 100%;
+}
+
+// Add these new styles
+.height-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.height-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: monospace;
+    width: 100px;
+    text-align: right;
+  }
+
+  label {
+    font-size: 0.9rem;
+    color: #666;
+  }
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
 }
